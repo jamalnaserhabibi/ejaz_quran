@@ -1,1 +1,8 @@
-/*# sourceMappingURL=NavBar.css.map */
+.nav_main {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(255, 0, 0, 0.353);
+}
+.nav_main .navbar {
+  color: white;
+}/*# sourceMappingURL=NavBar.css.map */

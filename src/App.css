@@ -1,11 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 :root {
   --blue_dark: #125488;
   --blue_light: #2a93d5;
   --blue_med: #20c8ee;
   --blue_white: #d1ebff;
-}
 
-:root {
+
   --gold_dark: #f9e79f;
   --gold_light: #f7dc6f;
   --gold_med: #f1c40f;
