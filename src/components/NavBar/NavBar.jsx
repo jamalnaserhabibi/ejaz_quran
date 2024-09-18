@@ -7,10 +7,10 @@ export default function NavBar() {
     <div className="nav_main">
       <Navbar expand="lg" className="navbar">
       <Container>
-        <Navbar.Brand href="#home">Ejaz Quran (LOGO)</Navbar.Brand>
+        <Navbar.Brand className='navLogo' href="#home">Ejaz Quran (LOGO)</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
+          <Nav className="navButton ms-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#lesson">Lesson</Nav.Link>
             <Nav.Link href="#quran">Quran Advice</Nav.Link>
