@@ -60,7 +60,7 @@
   background-color: var(--gold_med);
 }
 .nav_main .navbar .hamburger-react {
-  color: var(--gold_med);
+  color: var(--primary);
 }
 
 @media (max-width: 768px) {
