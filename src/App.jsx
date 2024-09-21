@@ -9,6 +9,7 @@ export default function App() {
     <>
      <NavBar />
      <Home />
+     {/* <Home /> */}
     </>
   )
 }

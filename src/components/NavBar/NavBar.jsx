@@ -1,27 +1,35 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import './NavBar.css'
+import { useState } from "react";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import { Divide as Hamburger } from 'hamburger-react';
+import "./NavBar.css";
+
 export default function NavBar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="nav_main">
-      <Navbar expand="lg" className="navbar">
-      <Container>
-        <Navbar.Brand className='navLogo' href="#home">Ejaz Quran (LOGO)</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="navButton ms-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#lesson">Lesson</Nav.Link>
-            <Nav.Link href="#quran">Quran Advice</Nav.Link>
-            <Nav.Link href="#source">Source</Nav.Link>
-            <Nav.Link href="#about">About Us</Nav.Link>
-            <Nav.Link href="#contact">Contact Us</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+      <Navbar expanded={isOpen} expand="lg" className="navbar">
+        <Container>
+          <Navbar.Brand  className="navLogo" href="#home">
+            اعجاز قرآن
+          </Navbar.Brand>
+          <Hamburger toggled={isOpen} toggle={setIsOpen} />
+          <Navbar.Collapse in={isOpen} id="basic-navbar-nav">
+            <Nav  className="navButton ms-auto">
+            <span style={{height:"20px"}} className="space"></span>
+              <Nav.Link href="#home">خانه</Nav.Link>
+              <Nav.Link href="#lesson">تقرير ها</Nav.Link>
+              <Nav.Link href="#quran">قرآنشريف</Nav.Link>
+              <Nav.Link href="#source">کتاب ها</Nav.Link>
+              <Nav.Link href="#about">در باره ما</Nav.Link>
+              <Nav.Link href="#contact">ارتباطات</Nav.Link>
+              <span style={{height:"80px"}} className="space"></span>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     </div>
   );
 }
-

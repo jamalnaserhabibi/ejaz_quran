@@ -1,14 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .nav_main {
   position: absolute;
-  width: 100%;
-  background-color:;
-  .navbar {
-    color: white;
+  width: 96%;
+  top: 10px;
+  left: 50%;
+  border-radius: 50px;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.048),
+    rgba(0, 0, 0, 0.048),
+    rgba(0, 0, 0, 0)
+  );
+  z-index: 100;
+  .navButton {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    font-family:  'Lalezar','sans-serif';
   }
-//   .navButton{
-//     background-color: green !important;
-//   }
-//   .navLogo{
-//     background-color: green     ;
-//   }
+
+  .navbar {
+   
+    .navLogo {
+      color:var(--primary);
+      font-Family: 'Reem Kufi Fun', 'sans-serif';
+      font-Size:30px;
+    }
+    .nav-link {
+      padding: 5px;
+      position: relative;
+      color: var(--gold_light);
+      font-weight: 600;
+      text-decoration: none;
+      padding: 10px 15px;
+      transition: color 0.3s ease, border-bottom 0.3s ease;
+      border-bottom: 2px solid transparent;
+      text-align: right;
+    }
+
+    .nav-link:hover {
+      color: var(--gold_med);
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--gold_med);
+      transition: width 0.3s ease;
+      
+    }
+
+    .nav-link:hover::after {
+      width: 70%;
+    }
+
+    .nav-link.active {
+      color: var(--gold_med);
+    }
+
+    .nav-link.active::after {
+      width: 100%;
+      background-color: var(--gold_med);
+    }
+    .hamburger-react {
+      color: var(--gold_med);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .nav_main {
+    overflow: hidden;
+    width: 100%;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: inherit;
+      backdrop-filter: blur(20px);
+      z-index: -1;
+    }
+    .navButton {
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .container{
+      flex-direction: row-reverse;
+     }
+  }
+}
+@media (min-width: 992px) {
+  .hamburger-react {
+    display: none;
+  }
+  .navbar {
+    .navbar-collapse {
+      .navButton {
+        display: flex !important;
+        flex-direction: row-reverse;
+      }
+    }
+    .space {
+      display: none;
+    }
+  }
+  
 }
