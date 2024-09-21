@@ -9,96 +9,43 @@
   width: 96%;
   top: 10px;
   left: 50%;
-  border-radius: 50px;
+  border-radius: 10px;
   transform: translateX(-50%);
-  background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.048), rgba(0, 0, 0, 0.048), rgba(0, 0, 0, 0));
-  z-index: 100;
+  background-color: rgba(18, 85, 136, 0.5725490196);
 }
-.nav_main .navButton {
-  width: 70%;
-  display: flex;
-  justify-content: space-around;
-  font-family: "Lalezar", "sans-serif";
-}
-.nav_main .navbar .navLogo {
-  color: var(--primary);
-  font-Family: "Reem Kufi Fun", "sans-serif";
-  font-Size: 30px;
+.nav_main .navbar {
+  color: white;
 }
 .nav_main .navbar .nav-link {
+  border: 1px solid red;
   padding: 5px;
   position: relative;
-  color: var(--gold_light);
-  font-weight: 600;
+  color: white;
   text-decoration: none;
   padding: 10px 15px;
   transition: color 0.3s ease, border-bottom 0.3s ease;
-  border-bottom: 2px solid transparent;
-  text-align: right;
+  border-bottom: 2px solid rgba(41, 41, 41, 0);
 }
 .nav_main .navbar .nav-link:hover {
-  color: var(--gold_med);
+  color: #ffd700;
 }
 .nav_main .navbar .nav-link::after {
   content: "";
   position: absolute;
-  right: 0;
+  left: 0;
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: var(--gold_med);
+  background-color: #ffd700;
   transition: width 0.3s ease;
 }
 .nav_main .navbar .nav-link:hover::after {
-  width: 70%;
+  width: 100%;
 }
 .nav_main .navbar .nav-link.active {
-  color: var(--gold_med);
+  color: #ffd700;
 }
 .nav_main .navbar .nav-link.active::after {
-  width: 100%;
-  background-color: var(--gold_med);
-}
-.nav_main .navbar .hamburger-react {
-  color: var(--gold_med);
-}
-
-@media (max-width: 768px) {
-  .nav_main {
-    overflow: hidden;
-    width: 100%;
-  }
-  .nav_main::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: inherit;
-    -webkit-backdrop-filter: blur(20px);
-            backdrop-filter: blur(20px);
-    z-index: -1;
-  }
-  .nav_main .navButton {
-    margin-top: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .nav_main .container {
-    flex-direction: row-reverse;
-  }
-}
-@media (min-width: 992px) {
-  .hamburger-react {
-    display: none;
-  }
-  .navbar .navbar-collapse .navButton {
-    display: flex !important;
-    flex-direction: row-reverse;
-  }
-  .navbar .space {
-    display: none;
-  }
-}/*# sourceMappingURL=NavBar.css.map */
+  width: 100%; /* Show full underline */
+  background-color: #ffd700; /* Color of the underline */
+} /*# sourceMappingURL=NavBar.css.map */
