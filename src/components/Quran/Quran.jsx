@@ -1,4 +1,4 @@
-import './quran.css'
+import './Quran.css'
 export default function NavBar() {
   return (
     <div className='MainQuran'>
