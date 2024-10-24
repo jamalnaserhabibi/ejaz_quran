@@ -1,7 +1,7 @@
 import './quran.css'
 export default function NavBar() {
   return (
-    <div>
+    <div className='MainQuran'>
       <h1 className='test'>hi Im Quran Page</h1>
     </div>
   );

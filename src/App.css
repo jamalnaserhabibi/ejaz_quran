@@ -4,7 +4,10 @@
   /* box-sizing: border-box; */
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"); */
+/* @import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&family=Lalezar&family=Reem+Kufi:wght@400..700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&family=Lalezar&family=Reem+Kufi:wght@400..700&display=swap'); */
+
 #root{
   background-color: var(--gold_white);
 }

@@ -6,14 +6,14 @@
 
 .totop {
   position: fixed;
-  bottom: 0;
+  bottom: 6%;
   right: 0;
-  border-radius: 50% 0 0 0;
+  border-radius: 40%;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.111);
   width: 3rem;
   height: 3rem;
   z-index: 1000;
-  transition: 0.1s ease-in-out !important;
+  transition: 0.2s ease-in-out !important;
   border-left: 1px solid var(--HoverColor);
   border-top: 1px solid var(--HoverColor);
   background-color: white;
@@ -42,8 +42,24 @@
   bottom: -150%;
 }
 
+.lang {
+  display: flex;
+  justify-content: right;
+}
+.lang select {
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+}
+.lang select option {
+  color: black;
+  background-color: transparent;
+  text-align: right;
+}
+
 .nav_main {
-  position: absolute;
+  position: fixed;
   width: 96%;
   height: 100vh;
   top: 10px;
@@ -59,16 +75,24 @@
   justify-content: space-around;
   font-family: "Lalezar", "sans-serif";
 }
+.nav_main .navbar {
+  border-radius: 40px;
+  font-size: 22px;
+}
 .nav_main .navbar .navLogo {
   color: var(--primary);
   font-Family: "Reem Kufi Fun", "sans-serif";
   font-Size: 30px;
+  border-left: 1px solid green;
+  border-right: 1px solid green;
+  border-radius: 10px;
+  padding: 0px 20px;
 }
 .nav_main .navbar .nav-link {
   padding: 5px;
   position: relative;
   color: var(--gold_light);
-  font-weight: 600;
+  font-weight: 300;
   text-decoration: none;
   padding: 10px 15px;
   transition: color 0.3s ease, border-bottom 0.3s ease;
@@ -101,6 +125,9 @@
 .nav_main .navbar .hamburger-react {
   color: var(--primary);
 }
+.nav_main .navbarhide {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .nav_main {
@@ -115,8 +142,6 @@
     right: 0;
     bottom: 0;
     background: inherit;
-    -webkit-backdrop-filter: blur(20px);
-            backdrop-filter: blur(20px);
     z-index: -1;
   }
   .nav_main .navButton {
@@ -127,6 +152,11 @@
   }
   .nav_main .container {
     flex-direction: row-reverse;
+  }
+  .nav_main .navbar {
+    font-size: 20px;
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
   }
 }
 @media (min-width: 992px) {

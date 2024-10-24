@@ -9,7 +9,7 @@
   .main {
     // margin-bottom: 20vh;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background-size: cover;
     background-position: right;
     // display: flex;
@@ -28,7 +28,11 @@
       width: 200px;
     }
     .homeText {
-      margin-top: -35px;
+      .hometitle{
+        font-family: 'Reem Kufi', 'irannastaliq';
+      font-size: 70px;
+      }
+      margin-top: -40px;
       height: 100vh;
       display: flex;
       padding: 0 50px;
@@ -37,11 +41,19 @@
       flex-direction: column;
       
       .mainText0 {
+       
         img{
           width: 300px;
         }
+       
+      }
+      .DesText{
         h2{
+          margin-bottom: 20px;
           font-Family: 'Fustat', 'sans-serif';
+        }
+        p{
+          font-size: 20px;
         }
       }
     }
@@ -50,13 +62,12 @@
 
   .homeBoxes {
     width: 80%;
-    margin-top: -60px;
-    margin-bottom: 50px;
+    position: absolute;
+    bottom: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
     gap: 20px;
     border-radius: 50px 50px 5px 5px;
     // box-shadow: rgba(0, 0, 0, 0.15) 0px -30px 15px 20px;
@@ -68,7 +79,7 @@
      
       width: 210px;
       height: 100px;
-      border-radius: 30px;
+      border-radius: 10px;
       box-shadow: rgba(0, 0, 0, 0.15) 0px -20px 15px 20px;
       background-color: var(--gold_white);
       display: flex;
@@ -93,7 +104,7 @@
     height: 50px;
     border-radius: 10px;
     color: white;
-    font-family: Mj_Zobeir;
+    // font-family: Mj_Zobeir;
     font-size: 25px;
     padding: 0 20px;
     border: 2px solid var(--primary);
@@ -112,8 +123,16 @@
     .main {
       .homeText {
         margin-top: -50px;
+      .hometitle{
+        margin-top: 50px;
+}
+        .DesText{
+       
+          p{
+            font-size: 15px;
+          }
       }
-    }
+    }}
     .homeBoxes {
       gap: 40px;
       padding: 30px 0;
