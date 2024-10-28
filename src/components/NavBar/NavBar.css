@@ -39,7 +39,7 @@
 }
 
 .activeToTop {
-  bottom: -150%;
+  bottom: 150%;
 }
 
 .lang {
@@ -58,16 +58,19 @@
   text-align: right;
 }
 
+.nav_main_height {
+  height: 100vh;
+}
+
 .nav_main {
+  z-index: 100;
   position: fixed;
   width: 96%;
-  height: 100vh;
   top: 10px;
   left: 50%;
   border-radius: 50px;
   transform: translateX(-50%);
   background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.048), rgba(0, 0, 0, 0.048), rgba(0, 0, 0, 0));
-  z-index: 100;
 }
 .nav_main .navButton {
   width: 70%;
@@ -90,6 +93,7 @@
 }
 .nav_main .navbar .nav-link {
   padding: 5px;
+  white-space: nowrap;
   position: relative;
   color: var(--gold_light);
   font-weight: 300;
@@ -130,6 +134,9 @@
 }
 
 @media (max-width: 768px) {
+  .totop {
+    right: 10px;
+  }
   .nav_main {
     overflow: hidden;
     width: 100%;
