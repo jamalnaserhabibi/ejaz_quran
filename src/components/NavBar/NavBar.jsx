@@ -50,11 +50,10 @@ export default function NavBar() {
                   <option value="ur">زبان: اردو</option>
                 </select>
               </div>
-              <span style={{ height: "40px" }} className="space"></span>
               <Nav.Link href="/" as={Link} to="/">
                 {t("home")}
               </Nav.Link>
-              <Nav.Link href="/lesson"> {t("subjects")}</Nav.Link>
+              <Nav.Link href="/lesson" as={Link} to="/taqrir" >  {t("subjects")}</Nav.Link>
               <Nav.Link href="/quran" as={Link} to="/quran">
                 {t("quran")}
               </Nav.Link>

@@ -135,7 +135,7 @@
 
 @media (max-width: 768px) {
   .totop {
-    right: 10px;
+    right: 20px;
   }
   .nav_main {
     overflow: hidden;
