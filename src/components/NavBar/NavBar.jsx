@@ -16,9 +16,9 @@ export default function NavBar() {
   const [navmain, setnavmain] = useState("nav_main");
   const scrollTop = () => {
     if (window.scrollY >= 20) {
-      setMoveBtn("totop");
+      // setMoveBtn("totop");
       sethidenav("navbarhide");
-      setnavmain("nav_main nav_main_height");
+      // setnavmain("nav_main nav_main_height");
     } else {
       setMoveBtn("totop activeToTop");
       sethidenav("navbar");

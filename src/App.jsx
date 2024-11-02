@@ -1,6 +1,6 @@
 import NavBar from "./components/NavBar/NavBar";
 import FirstLoad from "./components/firstload";
-import Quran from "./components/Quran/Quran";
+// import Quran from "./components/Quran/Quran";
 import Taqrir from "./components/taqrir/Taqrir";
 import "./App.css";
 import { BrowserRouter } from "react-router-dom";
@@ -13,7 +13,7 @@ export default function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<FirstLoad />} />
-          <Route path="/quran" element={<Quran />} />
+          {/* <Route path="/quran" element={<Quran />} /> */}
           <Route path="/taqrir" element={<Taqrir />} />
         </Routes>
       </BrowserRouter>

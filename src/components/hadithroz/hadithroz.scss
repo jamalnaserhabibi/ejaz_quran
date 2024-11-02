@@ -1,0 +1,25 @@
+.contents {
+  .cornerflower {
+    top: 30px;
+    // left: 30px;
+    position: relative;
+    width: 250px;
+  }
+  .elements{
+    position: relative;
+    top: -200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    .pic{
+        height: 400px;
+        width: 400px;
+        border: 1px solid red;
+    }
+    .texts{
+        height: 400px;
+        width: 600px;
+        border: 1px solid red;
+    }
+  }
+}

@@ -1,12 +1,11 @@
 import Home from "./Home/Home";
-import Quran from "./Quran/Quran";
-import Taqrir from "./taqrir/Taqrir";
+import Hadithroz from "./hadithroz/hadithroz";
 export default function FirstLoads() {
   return (
     <>
       <Home />
-      <Quran/>
-      <Taqrir/>
+      <Hadithroz/>
+      {/* <Taqrir/> */}
     </>
   );
 }

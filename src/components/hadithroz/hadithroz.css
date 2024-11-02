@@ -1,0 +1,22 @@
+.contents .cornerflower {
+  top: 30px;
+  position: relative;
+  width: 250px;
+}
+.contents .elements {
+  position: relative;
+  top: -200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.contents .elements .pic {
+  height: 400px;
+  width: 400px;
+  border: 1px solid red;
+}
+.contents .elements .texts {
+  height: 400px;
+  width: 600px;
+  border: 1px solid red;
+}/*# sourceMappingURL=hadithroz.css.map */
