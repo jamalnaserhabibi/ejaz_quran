@@ -1,9 +1,9 @@
 import "./Home.css";
-import bg from "../../assets/background5.jpg";
+import bg from "../../assets/a.jpg";
 // import besm from "../../assets/besmgreen.png";
 import line from "../../assets/linegreen.png";
 import Carousel from "react-bootstrap/Carousel";
-
+import ToTop from '../toTop/toTop'
 export default function Home() {
   const ayatTexts = [
     "وَنَزَّلْنَا عَلَيْكَ الْكِتَابَ تِبْيَانًا لِكُلِّ شَيْءٍ وَهُدًى وَرَحْمَةً وَبُشْرَىٰ لِلْمُسْلِمِينَ",
@@ -54,6 +54,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <ToTop/>
     </>
   );
 }

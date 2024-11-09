@@ -1,15 +1,36 @@
 import "./hadithroz.css";
-import flower from "../../assets/flower.png";
+import madina from "../../assets/madina.jpg";
+import line from "../../assets/linegreen.png";
+
 export default function hadithroz() {
   return (
     <div className="hadithroz">
       <div className="contents">
-        <img className="cornerflower" src={flower} alt="" />
         <div className="elements">
-          <div className="pic"></div>
+          <div className="pic">
+            <img src={madina} alt="" />
+          </div>
           <div className="texts">
-            <h1>عنوان</h1>
-            <p></p>
+            <h1>حدیث روز</h1>
+
+            <h2>
+              اَصْحابِی کَالنُّجُومِ بِاَیِّهِمْ اِقْتَدَیْتُمْ اهْتَدیْتُمْ
+            </h2>
+            <div className="line">
+              <img className="imgline" src={line} alt="" />
+            </div>
+            <p>
+              مسافران شب، در مسیر راه، وقتی که جادّه اصلی را گم کردند، میلیونها
+              ستاره در آسمان است، اگر هر کدام از آن ستاره‌ها را به دلخواه خود
+              تعیین کنند، هرگز به راه هدایت، قرار نمی‌گیرند، بلکه ستاره‌های نشان
+              دهنده جادّه اصلی، ستاره‌های مشخّص و شناخته‌ شده‌ای است، که مسافران
+              می‌توانند، در پرتو نور و جهت‌گیری آنها، به جادّه اصلی، راه یابند.
+              سافران شب، در مسیر راه، وقتی که جادّه اصلی را گم کردند، میلیونها
+              ستاره در آسمان است، اگر هر کدام از آن ستاره‌ها را به دلخواه خود
+              تعیین کنند، هرگز به راه هدایت، قرار نمی‌گیرند، بلکه ستاره‌های نشان
+              دهنده جادّه اصلی، ستاره‌های مشخّص و شناخته‌ شده‌ای است، که مسافران
+              می‌توانند، در پرتو نور و جهت‌گیری آنها، به جادّه اصلی، راه یابند.
+            </p>
           </div>
         </div>
       </div>

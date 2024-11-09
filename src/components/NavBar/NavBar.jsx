@@ -6,21 +6,15 @@ import Navbar from "react-bootstrap/Navbar";
 import { Divide as Hamburger } from "hamburger-react";
 import "./NavBar.css";
 import { useTranslation } from "react-i18next";
-import { IoMdArrowUp } from "react-icons/io";
-// import { NavDropdown } from "react-bootstrap";
 export default function NavBar() {
   const { t,i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
-  const [moveBtn, setMoveBtn] = useState(" totop activeToTop");
   const [hidenav, sethidenav] = useState("navbar");
   const [navmain, setnavmain] = useState("nav_main");
   const scrollTop = () => {
     if (window.scrollY >= 20) {
-      // setMoveBtn("totop");
       sethidenav("navbarhide");
-      // setnavmain("nav_main nav_main_height");
     } else {
-      setMoveBtn("totop activeToTop");
       sethidenav("navbar");
       setnavmain("nav_main");
 
@@ -53,23 +47,18 @@ export default function NavBar() {
               <Nav.Link href="/" as={Link} to="/">
                 {t("home")}
               </Nav.Link>
-              <Nav.Link href="/lesson" as={Link} to="/taqrir" >  {t("subjects")}</Nav.Link>
+              <Nav.Link href="/lesson" as={Link} to="/taqrir" >  {t("tafsirquran")}</Nav.Link>
               <Nav.Link href="/quran" as={Link} to="/quran">
-                {t("quran")}
+                {t("halmoama")}
               </Nav.Link>
-              <Nav.Link href="/source">  {t("books")}</Nav.Link>
-              <Nav.Link href="/about">  {t("aboutus")}</Nav.Link>
-              <Nav.Link href="/contact">  {t("contactus")}</Nav.Link>
+              <Nav.Link href="/about">  {t("mesdaq")}</Nav.Link>
+              <Nav.Link href="/contact">  {t("dros")}</Nav.Link>
               <span style={{ height: "40px" }} className="space"></span>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <div className={moveBtn}>
-        <a href="#">
-          <IoMdArrowUp className="icon" />
-        </a>
-      </div>
+     
     </div>
   );
 }
