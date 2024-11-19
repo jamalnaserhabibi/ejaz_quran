@@ -1,7 +1,10 @@
 import NavBar from "./components/NavBar/NavBar";
 import FirstLoad from "./components/firstload";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 // import Quran from "./components/Quran/Quran";
 import Taqrir from "./components/taqrir/Taqrir";
+import Footer from "./components/footer/footer";
 import "./App.css";
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
@@ -16,6 +19,7 @@ export default function App() {
           {/* <Route path="/quran" element={<Quran />} /> */}
           <Route path="/taqrir" element={<Taqrir />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </>
   );
