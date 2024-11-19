@@ -11,7 +11,7 @@ export default function hadithroz() {
             <img src={madina} alt="" />
           </div>
           <div className="texts">
-            <h1>حدیث روز</h1>
+            <h1>مصداق حدیث شریف</h1>
 
             <h2>
               اَصْحابِی کَالنُّجُومِ بِاَیِّهِمْ اِقْتَدَیْتُمْ اهْتَدیْتُمْ
