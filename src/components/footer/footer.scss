@@ -3,7 +3,7 @@
     background-color: var(--primary);
     border-radius: 50px 50px 0 0 ;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 20px;
-    font-family: "lateef";
+    font-family: "Amiri";
 }
 .links{
    a{
@@ -11,6 +11,8 @@
    }
    h5{
     text-align: right;
+    color: yellow;
+    font-weight: bolder;
    }
    .first p, .second p, .third p ,.fourth p     {
     // border: 1px solid red;

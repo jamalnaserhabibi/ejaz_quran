@@ -8,21 +8,26 @@ import {
   MDBRow,
   MDBBtn,
 } from "mdb-react-ui-kit";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
+// Initialize AOS
+AOS.init();
 export default function App() {
   return (
-    <MDBFooter className="footerClass text-center">
+    <MDBFooter  className="footerClass text-center">
       <MDBContainer className="p-4">
-        <section className="mb-4">
+        <section data-aos="fade-up" className="mb-4">
           <MDBBtn
             outline
             color="light"
             floating
             className="m-1"
-            href="#!"
-            role="button"
+            href=""
+            noRipple
+            // role="button"
           >
-            <MDBIcon fab icon="facebook-f" />
+            <MDBIcon fab icon="facebook-f"  />
           </MDBBtn>
 
           <MDBBtn
@@ -32,6 +37,8 @@ export default function App() {
             className="m-1"
             href="#!"
             role="button"
+            noRipple
+
           >
             <MDBIcon fab icon="twitter" />
           </MDBBtn>
@@ -43,6 +50,8 @@ export default function App() {
             className="m-1"
             href="#!"
             role="button"
+            noRipple
+
           >
             <MDBIcon fab icon="instagram" />
           </MDBBtn>
@@ -54,6 +63,8 @@ export default function App() {
             className="m-1"
             href="#!"
             role="button"
+            noRipple
+
           >
             <MDBIcon fab icon="telegram " />
           </MDBBtn>
@@ -64,8 +75,10 @@ export default function App() {
             className="m-1"
             href="#!"
             role="button"
+            noRipple
+
           >
-            <MDBIcon fab icon="whatsapp " />
+            <MDBIcon fab icon="whatsapp" />
           </MDBBtn>
           <MDBBtn
             outline
@@ -74,12 +87,14 @@ export default function App() {
             className="m-1"
             href="#!"
             role="button"
+            noRipple
+
           >
             <MDBIcon fab icon="envelope" />
           </MDBBtn>
         </section>
 
-        <section className="mb-4">
+        <section data-aos="fade-up" className="mb-4">
           <p>
             هدف ما حل معما های قرآنی تفسیر قرآن بالقرآن به زبان های دری انگلیسی
             پشتو و عربی میباشد که به منظور هدایت امت و هدف ما حل معما های قرآنی
@@ -89,7 +104,7 @@ export default function App() {
           </p>
         </section>
 
-        <section className="links">
+        <section data-aos="fade-up" className="links">
           <MDBRow>
             <MDBCol lg="3" md="6" className="mb-4 mb-md-0">
             <div className="first">
@@ -193,7 +208,7 @@ export default function App() {
         </section>
       </MDBContainer>
 
-      <div
+      <div 
         className="text-center p-3"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
       >
