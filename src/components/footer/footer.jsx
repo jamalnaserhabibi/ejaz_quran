@@ -105,12 +105,10 @@ export default function App() {
         </section>
 
         <section data-aos="fade-up" className="links">
-          <MDBRow>
-            <MDBCol lg="3" md="6" className="mb-4 mb-md-0">
+          <MDBRow className="mobile-two-column">
+            <MDBCol lg="3" md="6" sm="6" className="mb-4 mb-md-0">
             <div className="first">
-
               <h5 className="text-uppercase">زبان ها</h5>
-
               <p>
                 <a href="#!" className="text-white">
                   دری
@@ -133,8 +131,7 @@ export default function App() {
               </p>
             </div>
             </MDBCol>
-
-            <MDBCol lg="3" md="6" className="mb-4 mb-md-0">
+            <MDBCol lg="3" md="6" sm="6" className="mb-4 mb-md-0">
             <div className="second">
 
 
@@ -162,8 +159,7 @@ export default function App() {
               </p>
             </div>
             </MDBCol>
-
-            <MDBCol lg="3" md="6" className="mb-4 mb-md-0">
+            <MDBCol lg="3" md="6" sm="6" className="mb-4 mb-md-0">
            <div className="third">
 
               <h5 className="text-uppercase">موضوعات</h5>
@@ -183,15 +179,15 @@ export default function App() {
               </div>
 
             </MDBCol>
-            <MDBCol lg="3" md="6" className="mb-4 mb-md-0">
+            <MDBCol lg="3" md="6" sm="6" className="mb-4 mb-md-0">
            <div className="fourth">
            <h5 className="text-uppercase">ارتباطات</h5>
               <p>
-                خانقاه چشتی شریف شهرک امیری {" "}
-                <MDBIcon icon="home" className="me-2" />
+                کابل افغانستان {" "}
+                <MDBIcon icon="home" className="me-3" />
               </p>
               <p>
-                shaheed@ejazquran.com {" "}
+                shaheed@ejaz.com {" "}
                 <MDBIcon icon="envelope" className="me-3" />
               </p>
               <p>

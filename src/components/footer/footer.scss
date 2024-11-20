@@ -22,3 +22,10 @@
    }
   
 }
+
+@media (max-width: 768px) {
+    .mobile-two-column > div {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
