@@ -1,6 +1,6 @@
 .footerClass{
     color: white;
-    background-color: var(--primary);
+    background:linear-gradient(to left,#228b22, #086e08);
     border-radius: 50px 50px 0 0 ;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 20px;
     font-family: "Amiri";
@@ -8,7 +8,30 @@
 .links{
    a{
     text-decoration: none;
-   }
+    // border-bottom: 1px solid white;
+    position: relative;
+    display: inline-block; /* Ensure it can hold the ::before element */
+    // padding-bottom: 5px;
+    text-decoration: none;
+    // border-bottom: 1px solid white;
+    position: relative;
+       }
+       a::before {
+        content: "";
+        position: absolute;
+        bottom: 0; /* Position the line at the bottom of the link */
+        right: 0;
+        width: 100px; /* Full width of the link */
+        height: .6px; /* Thickness of the line */
+        background-color: rgba(255, 255, 255, 0.577); /* Color of the line */
+        transition: 0.3s ease; /* Smooth hover effect */
+      }
+      a:hover::before {
+        width: 120px; /* Increase the width to 120% on hover */
+    }
+    p a:hover{
+        color:rgb(213, 213, 213) !important;
+    }
    h5{
     text-align: right;
     color: yellow;
