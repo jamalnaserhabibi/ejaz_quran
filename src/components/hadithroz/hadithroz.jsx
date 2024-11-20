@@ -11,10 +11,10 @@ export default function hadithroz() {
     <div className="hadithroz">
       <div className="contents">
         <div  className="elements">
-          <div data-aos="fade-right" className="pic">
+          <div data-aos="fade-up" className="pic">
             <img src={madina} alt="" />
           </div>
-          <div data-aos="fade-left" className="texts">
+          <div data-aos="fade-up" className="texts">
             <h1>مصداق حدیث شریف</h1>
 
             <h2 data-aos="fade-up">

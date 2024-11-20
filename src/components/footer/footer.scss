@@ -8,26 +8,23 @@
 .links{
    a{
     text-decoration: none;
-    // border-bottom: 1px solid white;
     position: relative;
-    display: inline-block; /* Ensure it can hold the ::before element */
-    // padding-bottom: 5px;
+    display: inline-block;
     text-decoration: none;
-    // border-bottom: 1px solid white;
     position: relative;
        }
        a::before {
         content: "";
         position: absolute;
-        bottom: 0; /* Position the line at the bottom of the link */
+        bottom: 0; 
         right: 0;
-        width: 100px; /* Full width of the link */
-        height: .6px; /* Thickness of the line */
-        background-color: rgba(255, 255, 255, 0.577); /* Color of the line */
-        transition: 0.3s ease; /* Smooth hover effect */
+        width: 100px; 
+        height: .6px; 
+        background-color: rgba(255, 255, 255, 0.577);
+        transition: 0.3s ease; 
       }
       a:hover::before {
-        width: 120px; /* Increase the width to 120% on hover */
+        width: 120px; 
     }
     p a:hover{
         color:rgb(213, 213, 213) !important;
@@ -38,7 +35,6 @@
     font-weight: bolder;
    }
    .first p, .second p, .third p ,.fourth p     {
-    // border: 1px solid red;
     text-align: right;
     margin-right: 10px;
     white-space: nowrap;
