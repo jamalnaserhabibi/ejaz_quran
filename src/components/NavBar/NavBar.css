@@ -7,12 +7,15 @@
 .lang {
   display: flex;
   justify-content: right;
+  align-items: center;
 }
 .lang select {
   background-color: transparent;
   color: white;
   border: none;
   outline: none;
+  padding-right: 30px;
+  margin-right: -40px;
 }
 .lang select option {
   color: black;

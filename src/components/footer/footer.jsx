@@ -7,6 +7,7 @@ import {
   MDBCol,
   MDBRow,
   MDBBtn,
+  MDBTooltip
 } from "mdb-react-ui-kit";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -17,82 +18,73 @@ export default function App() {
   return (
     <MDBFooter  className="footerClass text-center">
       <MDBContainer className="p-4">
-        <section data-aos="fade-up" className="mb-4">
-          <MDBBtn
-            outline
-            color="light"
-            floating
-            className="m-1"
-            href=""
-            noRipple
-            // role="button"
-          >
-            <MDBIcon fab icon="facebook-f"  />
-          </MDBBtn>
+      <section data-aos="fade-up" className="mb-4">
+  <MDBTooltip tag="span" title="Facebook" placement="top">
+    <MDBBtn
+      outline
+      color="light"
+      floating
+      className="m-1"
+      href=""
+      noRipple
+    >
+      <MDBIcon fab icon="facebook-f" />
+    </MDBBtn>
+  </MDBTooltip>
 
-          <MDBBtn
-            outline
-            color="light"
-            floating
-            className="m-1"
-            href="#!"
-            role="button"
-            noRipple
+  <MDBTooltip tag="span" title="Twitter" placement="top">
+    <MDBBtn
+      outline
+      color="light"
+      floating
+      className="m-1"
+      href="#!"
+      noRipple
+    >
+      <MDBIcon fab icon="twitter" />
+    </MDBBtn>
+  </MDBTooltip>
 
-          >
-            <MDBIcon fab icon="twitter" />
-          </MDBBtn>
+  <MDBTooltip tag="span" title="Instagram" placement="top">
+    <MDBBtn
+      outline
+      color="light"
+      floating
+      className="m-1"
+      href="#!"
+      noRipple
+    >
+      <MDBIcon fab icon="instagram" />
+    </MDBBtn>
+  </MDBTooltip>
 
-          <MDBBtn
-            outline
-            color="light"
-            floating
-            className="m-1"
-            href="#!"
-            role="button"
-            noRipple
+  <MDBTooltip tag="span" title="Telegram" placement="top">
+    <MDBBtn
+      outline
+      color="light"
+      floating
+      className="m-1"
+      href="#!"
+      noRipple
+    >
+      <MDBIcon fab icon="telegram" />
+    </MDBBtn>
+  </MDBTooltip>
 
-          >
-            <MDBIcon fab icon="instagram" />
-          </MDBBtn>
+  <MDBTooltip tag="span" title="WhatsApp" placement="top">
+    <MDBBtn
+      outline
+      color="light"
+      floating
+      className="m-1"
+      href="#!"
+      noRipple
+    >
+      <MDBIcon fab icon="whatsapp" />
+    </MDBBtn>
+  </MDBTooltip>
+</section>
 
-          <MDBBtn
-            outline
-            color="light"
-            floating
-            className="m-1"
-            href="#!"
-            role="button"
-            noRipple
-
-          >
-            <MDBIcon fab icon="telegram " />
-          </MDBBtn>
-          <MDBBtn
-            outline
-            color="light"
-            floating
-            className="m-1"
-            href="#!"
-            role="button"
-            noRipple
-
-          >
-            <MDBIcon fab icon="whatsapp" />
-          </MDBBtn>
-          <MDBBtn
-            outline
-            color="light"
-            floating
-            className="m-1"
-            href="#!"
-            role="button"
-            noRipple
-
-          >
-            <MDBIcon fab icon="envelope" />
-          </MDBBtn>
-        </section>
 
         <section data-aos="fade-up" className="mb-4">
           <p>

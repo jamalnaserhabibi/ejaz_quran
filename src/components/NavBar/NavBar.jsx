@@ -2,6 +2,7 @@ import { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
+import { GrLanguage } from "react-icons/gr";
 import Navbar from "react-bootstrap/Navbar";
 import { Divide as Hamburger } from "hamburger-react";
 import "./NavBar.css";
@@ -35,14 +36,18 @@ export default function NavBar() {
           <Navbar.Collapse in={isOpen} id="basic-navbar-nav">
             <Nav className="navButton ms-auto">
             <span style={{ height: "40px" }} className="space"></span>
+           
               <div className="lang">
                 <select onChange={(e) => changeLang(e.target.value)}
                   defaultValue="dari">
                   <option value="da">زبان: دری</option>
                   <option value="ps">ژبه: پشتو</option>
-                  <option value="ar">لسان: عربی</option>
+                  <option value="ar">لسان: العربية</option>
                   <option value="ur">زبان: اردو</option>
+                  <  GrLanguage style={{color:"white"}}/>
                 </select>
+              <GrLanguage style={{ color: "white", marginRight: "8px", fontSize: "20px" }} />
+
               </div>
               <Nav.Link href="/" as={Link} to="/">
                 {t("home")}

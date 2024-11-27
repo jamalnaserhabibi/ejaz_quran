@@ -1,0 +1,8 @@
+.mainBooks {
+  width: 100%;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.824), rgba(26, 255, 0, 0.135), rgba(255, 255, 255, 0.824)), url("../../assets//bookbg.jpg");
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: -50px;
+}/*# sourceMappingURL=books.css.map */
