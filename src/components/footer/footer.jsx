@@ -12,7 +12,6 @@ import {
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-// Initialize AOS
 AOS.init();
 export default function App() {
   return (
@@ -108,7 +107,7 @@ export default function App() {
               </p>
               <p>
                 <a href="#!" className="text-white">
-                  عربی
+                العربية
                 </a>
               </p>
               <p>

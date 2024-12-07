@@ -44,7 +44,7 @@ export default function NavBar() {
                   <option value="ps">ژبه: پشتو</option>
                   <option value="ar">لسان: العربية</option>
                   <option value="ur">زبان: اردو</option>
-                  <  GrLanguage style={{color:"white"}}/>
+                  {/* <  GrLanguage style={{color:"white"}}/> */}
                 </select>
               <GrLanguage style={{ color: "white", marginRight: "8px", fontSize: "20px" }} />
 

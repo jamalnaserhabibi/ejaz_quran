@@ -4,33 +4,36 @@
   padding: 0;
 }
 
-.lang{
+.lang {
   // width: 95%;
+
   display: flex;
   // border: 1px solid red;
   justify-content: right;
   align-items: center;
-  select{
+  select {
     background-color: transparent;
     color: white;
     border: none;
     outline: none;
-padding-right: 30px;
-margin-right: -40px;
-    option{
+    padding-right: 30px;
+    margin-right: -40px;
+    option {
       color: black;
       background-color: transparent;
       text-align: right;
     }
   }
 }
-.nav_main_heightt{
+.nav_main_heightt {
   height: 100vh;
+  
 }
 .nav_main {
   z-index: 100;
   position: fixed;
   width: 96%;
+
   // height: 100vh;
   top: 10px;
   left: 50%;
@@ -44,19 +47,21 @@ margin-right: -40px;
     rgba(0, 0, 0, 0)
   );
   .navButton {
+
     width: 70%;
     display: flex;
     justify-content: space-around;
-    font-family:  'Lalezar','sans-serif';
+    font-family: "Lalezar", "sans-serif";
   }
 
   .navbar {
-   border-radius: 40px;
-  font-size: 22px;
+
+    border-radius: 40px;
+    font-size: 22px;
     .navLogo {
-      color:var(--primary);
-      font-Family: 'Reem Kufi Fun', 'sans-serif';
-      font-Size:30px;
+      color: var(--primary);
+      font-family: "Reem Kufi Fun", "sans-serif";
+      font-size: 30px;
       border-left: 1px solid green;
       border-right: 1px solid green;
       border-radius: 10px;
@@ -89,7 +94,6 @@ margin-right: -40px;
       height: 2px;
       background-color: var(--gold_med);
       transition: width 0.3s ease;
-      
     }
 
     .nav-link:hover::after {
@@ -108,14 +112,13 @@ margin-right: -40px;
       color: var(--primary);
     }
   }
-  .navbarhide{
+  .navbarhide {
     display: none;
     // height: 100vh;
   }
 }
 
 @media (max-width: 768px) {
-
   .nav_main {
     overflow: hidden;
     width: 100%;
@@ -129,7 +132,6 @@ margin-right: -40px;
       background: inherit;
       // backdrop-filter: blur(20px);
       z-index: -1;
-      
     }
     .navButton {
       margin-top: 10px;
@@ -137,16 +139,15 @@ margin-right: -40px;
       display: flex;
       justify-content: center;
     }
-    .container{
+    .container {
       flex-direction: row-reverse;
-     }
-     .navbar{
-  font-size: 20px;
-  // display: block;
-  
-      backdrop-filter: blur(20px);
+    }
+    .navbar {
+      font-size: 20px;
+      // display: block;
 
-     }
+      backdrop-filter: blur(20px);
+    }
   }
 }
 @media (min-width: 992px) {
@@ -164,5 +165,4 @@ margin-right: -40px;
       display: none;
     }
   }
-  
 }
