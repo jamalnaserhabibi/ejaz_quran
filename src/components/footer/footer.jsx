@@ -30,6 +30,18 @@ export default function App() {
       <MDBIcon fab icon="facebook-f" />
     </MDBBtn>
   </MDBTooltip>
+  <MDBTooltip tag="span" title="Youtube" placement="top">
+    <MDBBtn
+      outline
+      color="light"
+      floating
+      className="m-1"
+      href=""
+      noRipple
+    >
+      <MDBIcon fab icon="youtube" />
+    </MDBBtn>
+  </MDBTooltip>
 
   <MDBTooltip tag="span" title="Twitter" placement="top">
     <MDBBtn
@@ -40,7 +52,7 @@ export default function App() {
       href="#!"
       noRipple
     >
-      <MDBIcon fab icon="twitter" />
+      <MDBIcon fab icon="x" />
     </MDBBtn>
   </MDBTooltip>
 

@@ -40,10 +40,10 @@ export default function NavBar() {
               <div className="lang">
                 <select onChange={(e) => changeLang(e.target.value)}
                   defaultValue="dari">
-                  <option value="da">زبان: دری</option>
-                  <option value="ps">ژبه: پشتو</option>
-                  <option value="ar">لسان: العربية</option>
-                  <option value="ur">زبان: اردو</option>
+                  <option value="da">دری</option>
+                  <option value="ps">پشتو</option>
+                  <option value="ar">العربية</option>
+                  <option value="ur">اردو</option>
                   {/* <  GrLanguage style={{color:"white"}}/> */}
                 </select>
               <GrLanguage style={{ color: "white", marginRight: "8px", fontSize: "20px" }} />
