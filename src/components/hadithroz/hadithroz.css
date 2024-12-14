@@ -10,7 +10,7 @@
   margin-top: 20px;
   padding: 40px 20px;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
 }
 .contents .elements .pic {
   margin-left: 0px;

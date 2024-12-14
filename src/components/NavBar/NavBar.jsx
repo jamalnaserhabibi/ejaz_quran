@@ -35,9 +35,25 @@ export default function NavBar() {
           <Hamburger toggled={isOpen} toggle={setIsOpen} />
           <Navbar.Collapse in={isOpen} id="basic-navbar-nav">
             <Nav className="navButton ms-auto">
-            <span style={{ height: "40px" }} className="space"></span>
+            <span style={{ height: "20px" }} className="space"></span>
            
+              <Nav.Link href="/" as={Link} to="/">
+                {t("home")}
+              </Nav.Link>
+             <span className="line">|</span>
+              <Nav.Link href="/lesson" as={Link} to="/taqrir" >  {t("tafsirquran")}</Nav.Link>
+              <span className="line">|</span>
+              <Nav.Link href="/quran" as={Link} to="/quran">
+                {t("halmoama")}
+              </Nav.Link>
+              <span className="line">|</span>
+              <Nav.Link href="/about">  {t("mesdaq")}</Nav.Link>
+              <span className="line">|</span>
+              <Nav.Link href="/contact">  {t("dros")}</Nav.Link>
+              
+
               <div className="lang">
+              <GrLanguage style={{color: "white", marginRight: "8px", fontSize: "20px" }} />
                 <select onChange={(e) => changeLang(e.target.value)}
                   defaultValue="dari">
                   <option value="da">دری</option>
@@ -46,19 +62,9 @@ export default function NavBar() {
                   <option value="ur">اردو</option>
                   {/* <  GrLanguage style={{color:"white"}}/> */}
                 </select>
-              <GrLanguage style={{ color: "white", marginRight: "8px", fontSize: "20px" }} />
-
               </div>
-              <Nav.Link href="/" as={Link} to="/">
-                {t("home")}
-              </Nav.Link>
-              <Nav.Link href="/lesson" as={Link} to="/taqrir" >  {t("tafsirquran")}</Nav.Link>
-              <Nav.Link href="/quran" as={Link} to="/quran">
-                {t("halmoama")}
-              </Nav.Link>
-              <Nav.Link href="/about">  {t("mesdaq")}</Nav.Link>
-              <Nav.Link href="/contact">  {t("dros")}</Nav.Link>
               <span style={{ height: "40px" }} className="space"></span>
+              
             </Nav>
           </Navbar.Collapse>
         </Container>

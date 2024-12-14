@@ -12,7 +12,7 @@
   background-size: cover;
   background-position: center;
   // margin-bottom: -50px;
-  padding: 40px 20px;
+  padding: 20px 20px;
 
   h1 {
     color: var(--primary);
@@ -41,16 +41,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     .slick-slider {
       width: 90%;
     }
     .book {
       display: flex;
+      // padding: 0 20px;
       margin-bottom: 10px;
       justify-items: center;
       align-content: center;
       width: 200px;
       height: 350px;
+
+
       &:hover {
         h3 {
           background-color: var(--primary);
@@ -83,6 +87,7 @@
   .slick-prev:before,
   .slick-next:before {
     color: var(--primary);
+  //  font-size: 30px;
   }
 }
 

@@ -1,12 +1,9 @@
 @keyframes flowerrotate {
-  100% {
-    rotate: 0deg;
+  from {
+    transform: rotate(0deg);
   }
-  50% {
-    rotate: 360deg;
-  }
-  0% {
-    rotate: 0deg;
+  to {
+    transform: rotate(360deg);
   }
 }
 .mainFeedback {
@@ -57,10 +54,29 @@
 }
 .mainFeedback .formContainer {
   position: relative;
-  top: -350px;
+  top: -450px;
   width: 100%;
-  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(white, white, rgba(255, 255, 255, 0));
+  padding: 10px;
+}
+.mainFeedback .formContainer form {
+  width: 80%;
+}
+.mainFeedback .formContainer form button {
+  outline: none;
+  width: 100px;
+  color: white;
+  background-color: var(--primary);
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .mainFeedback .formContainer {
+    top: -550px;
+  }
 }/*# sourceMappingURL=feedback.css.map */

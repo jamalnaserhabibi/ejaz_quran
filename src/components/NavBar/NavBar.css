@@ -5,22 +5,27 @@
 }
 
 .lang {
+  margin-right: 7px;
   display: flex;
   justify-content: right;
   align-items: center;
 }
 .lang select {
+  text-align: right;
   background-color: transparent;
   color: white;
   border: none;
   outline: none;
-  padding-right: 30px;
-  margin-right: -40px;
+  padding-right: 24px;
+  margin-right: -20px;
 }
 .lang select option {
   color: black;
   background-color: transparent;
   text-align: right;
+}
+.lang select:hover {
+  cursor: pointer;
 }
 
 .nav_main_heightt {
@@ -55,6 +60,7 @@
   border-right: 1px solid green;
   border-radius: 10px;
   padding: 0px 20px;
+  margin-left: 50px;
 }
 .nav_main .navbar .nav-link {
   padding: 5px;
@@ -67,6 +73,7 @@
   transition: color 0.3s ease, border-bottom 0.3s ease;
   border-bottom: 2px solid transparent;
   text-align: right;
+  display: flex;
 }
 .nav_main .navbar .nav-link:hover {
   color: var(--gold_med);
@@ -119,6 +126,9 @@
     display: flex;
     justify-content: center;
   }
+  .nav_main .navButton .line {
+    display: none;
+  }
   .nav_main .container {
     flex-direction: row-reverse;
   }
@@ -127,14 +137,33 @@
     -webkit-backdrop-filter: blur(20px);
             backdrop-filter: blur(20px);
   }
+  .nav_main .navbar .navLogo {
+    margin-left: 0px;
+  }
 }
 @media (min-width: 992px) {
+  .lang {
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgba(0, 128, 0, 0.623);
+    margin-right: 20px;
+    margin-top: -4px;
+    padding: 0 10px;
+  }
+  .lang select {
+    padding-right: 24px;
+    margin-right: -20px;
+  }
+  .lang:hover {
+    background-color: rgba(0, 128, 0, 0.424);
+  }
   .hamburger-react {
     display: none;
   }
   .navbar .navbar-collapse .navButton {
+    color: rgba(0, 128, 0, 0.625);
     display: flex !important;
-    flex-direction: row-reverse;
+    align-items: center;
   }
   .navbar .space {
     display: none;

@@ -6,24 +6,32 @@
 
 .lang {
   // width: 95%;
-
-  display: flex;
+  // padding: 5px;
   // border: 1px solid red;
+margin-right: 7px;
+  display: flex;
   justify-content: right;
   align-items: center;
   select {
+text-align: right;
     background-color: transparent;
     color: white;
     border: none;
     outline: none;
-    padding-right: 30px;
-    margin-right: -40px;
+    padding-right: 24px;
+margin-right: -20px;
+
     option {
+
       color: black;
       background-color: transparent;
       text-align: right;
     }
+    &:hover{
+      cursor: pointer;
+    }
   }
+
 }
 .nav_main_heightt {
   height: 100vh;
@@ -33,7 +41,6 @@
   z-index: 100;
   position: fixed;
   width: 96%;
-
   // height: 100vh;
   top: 10px;
   left: 50%;
@@ -66,6 +73,7 @@
       border-right: 1px solid green;
       border-radius: 10px;
       padding: 0px 20px;
+      margin-left: 50px;
     }
     .nav-link {
       // border: 1px solid red;
@@ -79,6 +87,7 @@
       transition: color 0.3s ease, border-bottom 0.3s ease;
       border-bottom: 2px solid transparent;
       text-align: right;
+      display: flex;
     }
 
     .nav-link:hover {
@@ -111,6 +120,7 @@
     .hamburger-react {
       color: var(--primary);
     }
+   
   }
   .navbarhide {
     display: none;
@@ -138,6 +148,9 @@
       width: 100%;
       display: flex;
       justify-content: center;
+      .line{
+        display: none;
+      }
     }
     .container {
       flex-direction: row-reverse;
@@ -147,22 +160,56 @@
       // display: block;
 
       backdrop-filter: blur(20px);
+      // background-color: rgba(255, 255, 255, 0.467);
+      .navLogo{
+      margin-left: 0px;
+
+      }
+     
     }
   }
 }
 @media (min-width: 992px) {
+  .lang {
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgba(0, 128, 0, 0.623);
+  margin-right: 20px;
+  margin-top: -4px;
+  padding: 0 10px;
+  select{
+    // border: 1px solid green;
+padding-right: 24px;
+margin-right: -20px;
+  }
+  &:hover{
+    background-color: rgba(0, 128, 0, 0.424);
+
+  }
+  }
   .hamburger-react {
     display: none;
   }
   .navbar {
+    .nav-link{
+// border-right: 1px solid gray;
+
+    }
     .navbar-collapse {
       .navButton {
+       color: rgba(0, 128, 0, 0.625);
         display: flex !important;
-        flex-direction: row-reverse;
+        align-items: center;
+        // .line{
+        //   width: 10px;
+        //   height: 10px;
+        //   background-color: red;
+        // }
       }
     }
     .space {
       display: none;
     }
+   
   }
 }
