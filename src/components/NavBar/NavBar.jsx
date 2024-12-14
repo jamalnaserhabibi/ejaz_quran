@@ -30,7 +30,7 @@ export default function NavBar() {
       <Navbar expanded={isOpen} expand="lg" className={hidenav}>
         <Container>
           <Navbar.Brand className="navLogo" href="#home">
-            اعجاز قرآن
+           LOGO
           </Navbar.Brand>
           <Hamburger toggled={isOpen} toggle={setIsOpen} />
           <Navbar.Collapse in={isOpen} id="basic-navbar-nav">
