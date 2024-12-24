@@ -41,7 +41,7 @@ export default function NavBar() {
                 {t("home")}
               </Nav.Link>
              <span className="line">|</span>
-              <Nav.Link href="/lesson" as={Link} to="/taqrir" >  {t("tafsirquran")}</Nav.Link>
+              <Nav.Link href="/lesson" as={Link} to="/tafsirQuranBelQuran" >  {t("tafsirquran")}</Nav.Link>
               <span className="line">|</span>
               <Nav.Link href="/quran" as={Link} to="/quran">
                 {t("halmoama")}

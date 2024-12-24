@@ -1,0 +1,53 @@
+.tafsirQuranBelQuran{
+  width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../../assets/contentbg.jpg');
+    background-repeat: repeat; /* Repeats the background image */
+    background-size: cover;    /* Ensures the image maintains its original size */
+    background-position: top;
+    .main {
+      // margin-bottom: 20vh;
+      display: flex;
+      width: 100%;
+      height: 50vh;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      justify-content: center;
+      align-items: center;
+      // background-color: red;
+      font-family: "Lalezar";
+      text-align: center;
+      color: var(--gold_light);
+      border-radius: 0 0 50px 50px;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 20px;
+      // position: sticky;
+      // top: 0;
+    }
+    .content{
+margin: 20px;
+border-radius: 20px;
+     width: 80%;
+     height: 100px;
+     background-color: var(--primary);
+    }
+  
+   
+  }
+  @media (max-width: 768px) {
+    .mainContainer {
+      .main {
+        
+      }
+    
+    }
+  }
+  @media (min-width: 560px) {
+    .main {
+    }
+  }
+  
