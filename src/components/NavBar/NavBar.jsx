@@ -3,11 +3,13 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
 import { GrLanguage } from "react-icons/gr";
+import { useLocation } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import { Divide as Hamburger } from "hamburger-react";
 import "./NavBar.css";
 import { useTranslation } from "react-i18next";
 export default function NavBar() {
+  const location = useLocation();
   const { t,i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [hidenav, sethidenav] = useState("navbar");
@@ -25,8 +27,9 @@ export default function NavBar() {
   const changeLang = (lng) => {
     i18n.changeLanguage(lng);
   };
+  const navmainClass = location.pathname !== "/" ? "nav_main nav_main_color" : "nav_main";
   return (
-    <div className={navmain}>
+    <div className={navmainClass}>
       <Navbar expanded={isOpen} expand="lg" className={hidenav}>
         <Container>
           <Navbar.Brand className="navLogo" href="#home">
@@ -53,14 +56,13 @@ export default function NavBar() {
               
 
               <div className="lang">
-              <GrLanguage style={{color: "white", marginRight: "8px", fontSize: "20px" }} />
+              <GrLanguage style={{color: "white", marginRight: "30px", fontSize: "20px" }} />
                 <select onChange={(e) => changeLang(e.target.value)}
                   defaultValue="dari">
                   <option value="da">دری</option>
                   <option value="ps">پشتو</option>
                   <option value="ar">العربية</option>
                   <option value="ur">اردو</option>
-                  {/* <  GrLanguage style={{color:"white"}}/> */}
                 </select>
               </div>
               <span style={{ height: "40px" }} className="space"></span>
