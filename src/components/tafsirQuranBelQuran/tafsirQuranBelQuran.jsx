@@ -1,5 +1,6 @@
 import './tafsirQuranBelQuran.css';
 import bg from "../../assets/background5.jpg";
+import flowercontent from "../../assets/contentcardflower.png";
 import { useTranslation } from "react-i18next";
 export default function TafsirQuranBelQuran() {
   const { t } = useTranslation();
@@ -14,19 +15,29 @@ export default function TafsirQuranBelQuran() {
            <h1>{t("tafsirquran")}</h1>
        
       </div>
-      <div className="content"></div>
-      <div className="content"></div>
-      <div className="content"></div>
-      <div className="content"></div>
-      <div className="content"></div>
-      <div className="content"></div>
-      <div className="content"></div>
-      <div className="content"></div>
-      <div className="content"></div>
-      <div className="content"></div>
-      <div className="content"></div>
-      <div className="content"></div>
-      <div className="content"></div>
+      <div className="content">
+        <img src={flowercontent} alt="" />
+        <div className="text">
+          <h2>عنوان بحث مورد نظر</h2>
+        </div>
+        <img style={{transform:"rotate(180deg)"}}  src={flowercontent} alt="" />
+      </div>
+      <div className="content">
+        <img src={flowercontent} alt="" />
+        <div className="text">
+          <h2>  عنوان بحث مورد نظر بعدی</h2>
+        </div>
+        <img style={{transform:"rotate(180deg)"}}  src={flowercontent} alt="" />
+      </div>
+      <div className="content">
+        <img src={flowercontent} alt="" />
+        <div className="text">
+          <h2>عنوان بحث مورد نظر</h2>
+        </div>
+        <img style={{transform:"rotate(180deg)"}}  src={flowercontent} alt="" />
+      </div>
+
+   
     </div>
   );
 }

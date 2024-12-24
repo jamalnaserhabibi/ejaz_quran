@@ -1,13 +1,15 @@
 .tafsirQuranBelQuran{
   width: 100%;
+  font-family: "Lalezar";
+
     height: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-image: url('../../assets/contentbg.jpg');
-    background-repeat: repeat; /* Repeats the background image */
-    background-size: cover;    /* Ensures the image maintains its original size */
+    // background-image: url('../../assets/contentbg2.jpg');
+    background-repeat: repeat; 
+    background-size: contain;    
     background-position: top;
     .main {
       // margin-bottom: 20vh;
@@ -20,7 +22,6 @@
       justify-content: center;
       align-items: center;
       // background-color: red;
-      font-family: "Lalezar";
       text-align: center;
       color: var(--gold_light);
       border-radius: 0 0 50px 50px;
@@ -30,12 +31,25 @@
     }
     .content{
 margin: 20px;
-border-radius: 20px;
-     width: 80%;
-     height: 100px;
-     background-color: var(--primary);
+// border-radius: 20px;
+width: 80%;
+height: 80px;
+// background-color: var(--primary);
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: row;
+color: var(--primary);
+border: 1px solid var(--primary);
+border-radius: 100px;
+transition: 0.3s ease-in-out;
+&:hover{
+ padding: 0 20px;
+}
+img {
+  width: 60px;
+}
     }
-  
    
   }
   @media (max-width: 768px) {
