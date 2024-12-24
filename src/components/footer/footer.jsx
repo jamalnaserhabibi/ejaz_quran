@@ -108,7 +108,7 @@ export default function App() {
         </section>
 
         <section data-aos="fade-up" className="links">
-          <MDBRow className="mobile-two-column">
+          <MDBRow className="footerCards mobile-two-column">
             <MDBCol lg="3" md="6" sm="6" className="mb-4 mb-md-0">
             <div className="first">
               <h5 className="text-uppercase">زبان ها</h5>
@@ -186,20 +186,20 @@ export default function App() {
            <div className="fourth">
            <h5 className="text-uppercase">ارتباطات</h5>
               <p>
-                کابل افغانستان {" "}
                 <MDBIcon icon="home" className="me-3" />
+               {" "} کابل افغانستان 
               </p>
               <p>
-                shaheed@ejaz.com {" "}
                 <MDBIcon icon="envelope" className="me-3" />
+               {" "} shaheed@ejaz.com 
               </p>
               <p>
-              9379933333 {" "}
                 <MDBIcon icon="phone" className="me-3" />
+             {" "} 9379933333 
               </p>
               <p>
-              9379933333 {" "}
                 <MDBIcon icon="phone" className="me-3" />
+              {" "}9379933333 
               </p>
            </div>
             </MDBCol>

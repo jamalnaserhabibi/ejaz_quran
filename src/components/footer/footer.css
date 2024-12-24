@@ -6,6 +6,10 @@
   font-family: "Amiri";
 }
 
+.footerCards {
+  flex-direction: row-reverse;
+}
+
 .links a {
   text-decoration: none;
   position: relative;
