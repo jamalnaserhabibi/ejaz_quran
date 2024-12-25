@@ -1,4 +1,4 @@
-.tafsirQuranBelQuran {
+.taqrirList {
   width: 100%;
   font-family: "Lalezar";
   height: auto;
@@ -10,7 +10,8 @@
   background-size: contain;
   background-position: top;
 }
-.tafsirQuranBelQuran .main {
+.taqrirList .main {
+  margin-bottom: 10px;
   display: flex;
   width: 100%;
   height: 15vh;
@@ -22,29 +23,46 @@
   text-align: center;
   color: var(--gold_light);
 }
-.tafsirQuranBelQuran .content {
-  margin: 20px;
+.taqrirList .content-list {
   width: 80%;
-  height: 80px;
+  text-decoration: none;
+}
+.taqrirList .content-list .content {
+  margin: 20px;
+  margin-top: 10px;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   color: var(--primary);
   border: 1px solid var(--primary);
-  border-radius: 100px;
+  border-radius: 30px;
   transition: 0.3s ease-in-out;
   padding: 0 20px;
 }
-.tafsirQuranBelQuran .content:hover {
+.taqrirList .content-list .content:hover {
   padding: 0 0px;
+  cursor: pointer;
 }
-.tafsirQuranBelQuran .content img {
-  width: 60px;
+.taqrirList .content-list .content img {
+  width: 50px;
 }
 
 @media (max-width: 768px) {
-  .tafsirQuranBelQuran .main {
+  .taqrirList .main {
     height: 8vh;
   }
-}/*# sourceMappingURL=tafsirQuranBelQuran.css.map */
+  .taqrirList .content-list {
+    width: 90%;
+  }
+  .taqrirList .content-list .content {
+    margin: 10px;
+    margin-top: 5px;
+    border-radius: 25px;
+    height: 50px;
+  }
+  .taqrirList .content-list .content img {
+    width: 40px;
+  }
+}/*# sourceMappingURL=taqrirList.css.map */

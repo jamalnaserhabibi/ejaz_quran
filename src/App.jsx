@@ -6,7 +6,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 // import Quran from "./components/Quran/Quran";
-import TafsirQuranBelQuran from "./components/tafsirQuranBelQuran/tafsirQuranBelQuran";
+import TaqrirList from "./components/taqrirList/taqrirList";
+import TaqrirView from "./components/taqrirView/taqrirView";
 import Footer from "./components/footer/footer";
 import "./App.css";
 import { BrowserRouter } from "react-router-dom";
@@ -20,7 +21,8 @@ export default function App() {
         <Routes>
           <Route path="/" element={<FirstLoad />} />
           {/* <Route path="/quran" element={<Quran />} /> */}
-          <Route path="/TafsirQuranBelQuran" element={<TafsirQuranBelQuran />} />
+          <Route path="/taqrirList" element={<TaqrirList />} />
+          <Route path="/taqrirView" element={<TaqrirView />} />
         </Routes>
         <Footer/>
       </BrowserRouter>
